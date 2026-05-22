@@ -59,26 +59,26 @@ body::after {
   background: #6ecc45;
 }
 
-/* Custom cursor */
+/* Custom cursor — colours controlled by JS MotionValues */
 .cursor-dot {
   position: fixed;
   width: 10px;
   height: 10px;
-  background: #8DFF5A;
   border-radius: 50%;
   pointer-events: none;
   z-index: 99999;
-  transition: width 0.15s, height 0.15s;
+  transition: width 0.15s, height 0.15s, background-color 0.2s ease;
 }
 .cursor-ring {
   position: fixed;
   width: 36px;
   height: 36px;
-  border: 1.5px solid #8DFF5A;
+  border: 1.5px solid;
   border-radius: 50%;
   pointer-events: none;
   z-index: 99998;
-  opacity: 0.5;
+  opacity: 0.6;
+  transition: border-color 0.2s ease;
 }
 
 /* Marquee animation */
