@@ -34,13 +34,13 @@ function ServiceAccordion({ service, index }: { service: (typeof services)[0]; i
         onClick={() => setOpen((o) => !o)}
         aria-expanded={open}
       >
-        <div className="flex items-center gap-6 md:gap-10">
-          <span className="font-black text-3xl md:text-4xl text-lime/20 leading-none shrink-0 group-hover:text-lime/40 transition-colors">
+        <div className="flex items-center gap-4 md:gap-8 min-w-0">
+          <span className="font-black text-2xl sm:text-3xl md:text-4xl text-lime/20 leading-none shrink-0 group-hover:text-lime/40 transition-colors w-10 sm:w-auto">
             {service.number}
           </span>
           <div className="flex items-center gap-4">
             <Icon size={20} className="text-lime shrink-0" />
-            <h2 className="font-bold text-xl md:text-2xl text-white group-hover:text-lime transition-colors">
+            <h2 className="font-bold text-base sm:text-xl md:text-2xl text-white group-hover:text-lime transition-colors leading-tight">
               {service.title}
             </h2>
           </div>
@@ -64,7 +64,7 @@ function ServiceAccordion({ service, index }: { service: (typeof services)[0]; i
             transition={{ duration: 0.4, ease: [0.76, 0, 0.24, 1] }}
             className="overflow-hidden"
           >
-            <div className="pb-10 pl-0 md:pl-[calc(2.5rem+40px+1.5rem)]">
+            <div className="pb-10 pl-2 sm:pl-4 md:pl-[calc(2.5rem+40px+1.5rem)]">
               <p className="text-offwhite/60 text-base leading-relaxed mb-6 max-w-2xl">
                 {service.description}
               </p>
@@ -99,7 +99,7 @@ export default function ServicesPage() {
             <span className="text-lime text-xs font-bold tracking-widest uppercase block mb-4">
               What We Offer
             </span>
-            <h1 className="font-black text-6xl md:text-8xl lg:text-[10rem] text-white leading-[0.9] tracking-tight">
+            <h1 className="font-black text-4xl sm:text-6xl md:text-8xl lg:text-[10rem] text-white leading-[0.9] tracking-tight">
               OUR
               <br />
               SERVICES
@@ -113,7 +113,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Accordion */}
-      <section className="max-w-7xl mx-auto px-6 md:px-10 py-20">
+      <section className="max-w-7xl mx-auto px-6 md:px-10 py-16 md:py-20">
         {services.map((service, i) => (
           <ServiceAccordion key={service.id} service={service} index={i} />
         ))}
@@ -122,7 +122,7 @@ export default function ServicesPage() {
       {/* CTA strip */}
       <section className="bg-lime py-16">
         <div className="max-w-7xl mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center justify-between gap-6">
-          <h2 className="font-black text-3xl md:text-4xl text-base leading-tight">
+          <h2 className="font-black text-2xl sm:text-3xl md:text-4xl text-base leading-tight text-center md:text-left">
             Need a tailored environmental solution?
           </h2>
           <Link

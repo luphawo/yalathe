@@ -8,7 +8,7 @@ export default function QualityPolicy() {
   const inView = useInView(ref, { once: true, margin: "-60px" });
 
   return (
-    <section ref={ref} className="bg-base py-28 md:py-36">
+    <section ref={ref} className="bg-base py-20 md:py-28 lg:py-36">
       <div className="max-w-7xl mx-auto px-6 md:px-10 text-center">
         <motion.div
           className="mb-16"
@@ -19,7 +19,7 @@ export default function QualityPolicy() {
           <span className="text-lime text-xs font-bold tracking-widest uppercase">
             Quality Policy
           </span>
-          <h2 className="font-black text-4xl md:text-6xl text-white mt-2 leading-tight">
+          <h2 className="font-black text-3xl sm:text-4xl md:text-6xl text-white mt-2 leading-tight">
             THE FIVE KEY ELEMENTS
             <br />
             <span className="text-offwhite/30">OF SERVICE</span>

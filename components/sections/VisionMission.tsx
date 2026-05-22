@@ -13,7 +13,7 @@ export default function VisionMission() {
       {/* VISION — dark band */}
       <section
         ref={visionRef}
-        className="relative bg-forest py-28 md:py-36 overflow-hidden"
+        className="relative bg-forest py-20 md:py-28 lg:py-36 overflow-hidden"
       >
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_20%_50%,rgba(141,255,90,0.04),transparent)] pointer-events-none" />
         <div className="max-w-7xl mx-auto px-6 md:px-10">
@@ -25,7 +25,7 @@ export default function VisionMission() {
             <span className="text-lime text-xs font-bold tracking-widest uppercase block mb-6">
               Our Vision
             </span>
-            <h2 className="font-black text-4xl md:text-6xl text-white leading-tight max-w-4xl">
+            <h2 className="font-black text-3xl sm:text-4xl md:text-6xl text-white leading-tight max-w-4xl">
               To be recognised as the leading environmental management partner in{" "}
               <span className="text-lime">Africa</span>, delivering impactful,
               science-based solutions that protect ecosystems, empower communities,
@@ -38,7 +38,7 @@ export default function VisionMission() {
       {/* MISSION — lime band */}
       <section
         ref={missionRef}
-        className="relative bg-lime py-28 md:py-36 overflow-hidden"
+        className="relative bg-lime py-20 md:py-28 lg:py-36 overflow-hidden"
       >
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_80%_50%,rgba(196,135,58,0.15),transparent)] pointer-events-none" />
         <div className="max-w-7xl mx-auto px-6 md:px-10">
@@ -50,7 +50,7 @@ export default function VisionMission() {
             <span className="text-base/60 text-xs font-bold tracking-widest uppercase block mb-6">
               Our Mission
             </span>
-            <h2 className="font-black text-4xl md:text-6xl text-base leading-tight max-w-4xl">
+            <h2 className="font-black text-3xl sm:text-4xl md:text-6xl text-base leading-tight max-w-4xl">
               To deliver{" "}
               <span className="text-clay">specialised, innovative</span> environmental
               services that set the benchmark for sustainability — building lasting

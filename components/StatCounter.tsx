@@ -16,7 +16,7 @@ export default function StatCounter({ value, suffix = "", label }: StatCounterPr
 
   return (
     <div ref={ref} className="flex flex-col">
-      <span className="font-black text-6xl md:text-7xl text-white leading-none">
+      <span className="font-black text-5xl sm:text-6xl md:text-7xl text-white leading-none">
         {count}
         <span className="text-lime">{suffix}</span>
       </span>

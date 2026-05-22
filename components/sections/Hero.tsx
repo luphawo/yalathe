@@ -88,7 +88,7 @@ export default function Hero() {
             <div key={i} className="overflow-hidden">
               <motion.h1
                 variants={wordVariant}
-                className="font-black text-[clamp(4rem,12vw,10rem)] text-white leading-[0.92] tracking-tight will-change-transform"
+                className="font-black text-[clamp(2.8rem,11vw,10rem)] text-white leading-[0.92] tracking-tight will-change-transform"
               >
                 {word}
               </motion.h1>

@@ -113,7 +113,7 @@ export default function Navbar() {
                 >
                   <Link
                     href={link.href}
-                    className="text-5xl font-black text-white hover:text-lime transition-colors leading-none"
+                    className="text-4xl sm:text-5xl font-black text-white hover:text-lime transition-colors leading-none"
                   >
                     {link.label}
                   </Link>

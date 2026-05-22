@@ -8,7 +8,7 @@ export default function Goals() {
   const inView = useInView(ref, { once: true, margin: "-60px" });
 
   return (
-    <section ref={ref} className="bg-base py-28 md:py-36">
+    <section ref={ref} className="bg-base py-20 md:py-28 lg:py-36">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <motion.div
           className="mb-16"
@@ -19,7 +19,7 @@ export default function Goals() {
           <span className="text-lime text-xs font-bold tracking-widest uppercase">
             Strategic Objectives
           </span>
-          <h2 className="font-black text-5xl md:text-7xl text-white mt-2 leading-tight">
+          <h2 className="font-black text-4xl sm:text-5xl md:text-7xl text-white mt-2 leading-tight">
             OUR GOALS
           </h2>
         </motion.div>
@@ -28,15 +28,15 @@ export default function Goals() {
           {goals.map((goal, i) => (
             <motion.div
               key={goal.id}
-              className="flex gap-8 md:gap-16 py-8 group"
+              className="flex gap-5 md:gap-12 lg:gap-16 py-8 group"
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: i * 0.08 }}
             >
-              <span className="font-black text-5xl md:text-6xl text-white/10 leading-none shrink-0 group-hover:text-lime/30 transition-colors duration-300">
+              <span className="font-black text-4xl sm:text-5xl md:text-6xl text-white/10 leading-none shrink-0 group-hover:text-lime/30 transition-colors duration-300">
                 {goal.number}
               </span>
-              <p className="text-offwhite/70 text-lg md:text-xl leading-relaxed self-center group-hover:text-white transition-colors duration-300">
+              <p className="text-offwhite/70 text-base md:text-lg xl:text-xl leading-relaxed self-center group-hover:text-white transition-colors duration-300">
                 {goal.text}
               </p>
             </motion.div>

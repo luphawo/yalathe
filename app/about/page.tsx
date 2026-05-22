@@ -43,7 +43,7 @@ export default function AboutPage() {
             <span className="text-lime text-xs font-bold tracking-widest uppercase block mb-4">
               Who We Are
             </span>
-            <h1 className="font-black text-6xl md:text-8xl lg:text-[9rem] text-white leading-[0.9] tracking-tight">
+            <h1 className="font-black text-4xl sm:text-6xl md:text-8xl lg:text-[9rem] text-white leading-[0.9] tracking-tight">
               ABOUT
               <br />
               YALATHE
@@ -53,13 +53,13 @@ export default function AboutPage() {
       </section>
 
       {/* Company Story */}
-      <section className="py-28 md:py-36 max-w-7xl mx-auto px-6 md:px-10">
-        <div className="grid md:grid-cols-2 gap-16 md:gap-24 items-start">
+      <section className="py-20 md:py-28 lg:py-36 max-w-7xl mx-auto px-6 md:px-10">
+        <div className="grid md:grid-cols-2 gap-12 md:gap-20 lg:gap-24 items-start">
           <Section>
             <span className="text-lime text-xs font-bold tracking-widest uppercase block mb-4">
               Our Story
             </span>
-            <h2 className="font-black text-4xl md:text-5xl text-white leading-tight mb-8">
+            <h2 className="font-black text-3xl sm:text-4xl md:text-5xl text-white leading-tight mb-8">
               Born from a vision for a greener Africa
             </h2>
             <div className="space-y-5 text-offwhite/60 text-base leading-relaxed">
@@ -121,17 +121,17 @@ export default function AboutPage() {
         <Marquee
           text="INTEGRITY · SUSTAINABILITY · EXCELLENCE · DIVERSITY · COLLABORATION · IMPACT · "
           speed="slow"
-          textClassName="font-black text-4xl md:text-6xl text-lime/30 tracking-tight"
+          textClassName="font-black text-3xl sm:text-4xl md:text-6xl text-lime/30 tracking-tight"
         />
       </div>
 
       {/* Values grid */}
-      <section className="py-28 md:py-36 max-w-7xl mx-auto px-6 md:px-10">
+      <section className="py-20 md:py-28 lg:py-36 max-w-7xl mx-auto px-6 md:px-10">
         <Section className="mb-16">
           <span className="text-lime text-xs font-bold tracking-widest uppercase block mb-4">
             What Drives Us
           </span>
-          <h2 className="font-black text-5xl md:text-6xl text-white leading-tight">
+          <h2 className="font-black text-4xl sm:text-5xl md:text-6xl text-white leading-tight">
             OUR VALUES
           </h2>
         </Section>
@@ -150,20 +150,20 @@ export default function AboutPage() {
       </section>
 
       {/* Goals */}
-      <section className="bg-forest py-28 md:py-36">
+      <section className="bg-forest py-20 md:py-28 lg:py-36">
         <div className="max-w-7xl mx-auto px-6 md:px-10">
           <Section className="mb-16">
             <span className="text-lime text-xs font-bold tracking-widest uppercase block mb-4">
               Where We&apos;re Headed
             </span>
-            <h2 className="font-black text-5xl md:text-6xl text-white leading-tight">
+            <h2 className="font-black text-4xl sm:text-5xl md:text-6xl text-white leading-tight">
               STRATEGIC GOALS
             </h2>
           </Section>
           <div className="space-y-0 divide-y divide-white/5">
             {goals.map((goal) => (
-              <div key={goal.id} className="flex gap-8 md:gap-16 py-8 group">
-                <span className="font-black text-4xl md:text-5xl text-white/10 leading-none shrink-0 group-hover:text-lime/30 transition-colors">
+              <div key={goal.id} className="flex gap-5 md:gap-12 lg:gap-16 py-8 group">
+                <span className="font-black text-3xl sm:text-4xl md:text-5xl text-white/10 leading-none shrink-0 group-hover:text-lime/30 transition-colors">
                   {goal.number}
                 </span>
                 <p className="text-offwhite/70 text-lg leading-relaxed self-center">
@@ -176,12 +176,12 @@ export default function AboutPage() {
       </section>
 
       {/* Philosophy */}
-      <section className="py-28 md:py-36 max-w-7xl mx-auto px-6 md:px-10">
+      <section className="py-20 md:py-28 lg:py-36 max-w-7xl mx-auto px-6 md:px-10">
         <Section className="mb-16">
           <span className="text-lime text-xs font-bold tracking-widest uppercase block mb-4">
             How We Work
           </span>
-          <h2 className="font-black text-5xl md:text-6xl text-white leading-tight">
+          <h2 className="font-black text-4xl sm:text-5xl md:text-6xl text-white leading-tight">
             BUSINESS PHILOSOPHY
           </h2>
         </Section>
@@ -206,17 +206,17 @@ export default function AboutPage() {
       </section>
 
       {/* Team */}
-      <section className="bg-forest py-28 md:py-36">
+      <section className="bg-forest py-20 md:py-28 lg:py-36">
         <div className="max-w-7xl mx-auto px-6 md:px-10">
           <Section className="mb-16">
             <span className="text-lime text-xs font-bold tracking-widest uppercase block mb-4">
               The People Behind The Work
             </span>
-            <h2 className="font-black text-5xl md:text-6xl text-white leading-tight">
+            <h2 className="font-black text-4xl sm:text-5xl md:text-6xl text-white leading-tight">
               OUR TEAM
             </h2>
           </Section>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {team.map((member) => (
               <TeamCard key={member.id} member={member} />
             ))}
@@ -227,7 +227,7 @@ export default function AboutPage() {
       {/* CTA */}
       <section className="bg-lime py-16">
         <div className="max-w-7xl mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center justify-between gap-6">
-          <h2 className="font-black text-3xl md:text-4xl text-base leading-tight">
+          <h2 className="font-black text-2xl sm:text-3xl md:text-4xl text-base leading-tight text-center md:text-left">
             Ready to work with us?
           </h2>
           <Link

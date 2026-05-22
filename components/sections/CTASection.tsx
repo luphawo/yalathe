@@ -30,7 +30,7 @@ export default function CTASection() {
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 md:px-10 text-center">
         <motion.h2
-          className="font-black text-4xl md:text-6xl lg:text-7xl text-base leading-tight mb-6"
+          className="font-black text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-base leading-tight mb-6"
           initial={{ opacity: 0, y: 40 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}

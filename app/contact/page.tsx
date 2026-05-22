@@ -74,7 +74,7 @@ export default function ContactPage() {
             <span className="text-lime text-xs font-bold tracking-widest uppercase block mb-4">
               Reach Out
             </span>
-            <h1 className="font-black text-6xl md:text-8xl lg:text-[9rem] text-white leading-[0.9] tracking-tight">
+            <h1 className="font-black text-4xl sm:text-6xl md:text-8xl lg:text-[9rem] text-white leading-[0.9] tracking-tight">
               CONTACT
               <br />
               US
@@ -84,8 +84,8 @@ export default function ContactPage() {
       </section>
 
       {/* Split layout */}
-      <section className="max-w-7xl mx-auto px-6 md:px-10 py-24 md:py-36">
-        <div className="grid md:grid-cols-2 gap-16 md:gap-24">
+      <section className="max-w-7xl mx-auto px-6 md:px-10 py-20 md:py-28 lg:py-36">
+        <div className="grid md:grid-cols-2 gap-12 md:gap-20 lg:gap-24">
           {/* Left — contact info */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -101,7 +101,7 @@ export default function ContactPage() {
               respond within one business day.
             </p>
 
-            <div className="space-y-8">
+            <div className="space-y-6 sm:space-y-8">
               <div className="flex gap-4">
                 <div className="w-10 h-10 rounded-sm bg-lime/10 flex items-center justify-center shrink-0">
                   <MapPin size={18} className="text-lime" />
@@ -188,7 +188,7 @@ export default function ContactPage() {
                   </p>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} noValidate className="space-y-8">
+                <form onSubmit={handleSubmit} noValidate className="space-y-6 sm:space-y-8">
                   {/* Name */}
                   <div>
                     <label className="text-lime text-xs font-bold tracking-widest uppercase block mb-2">

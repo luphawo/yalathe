@@ -12,13 +12,13 @@ export default function Values() {
   const inView = useInView(ref, { once: true, margin: "-60px" });
 
   return (
-    <section className="bg-base py-28 md:py-36 overflow-hidden">
+    <section className="bg-base py-20 md:py-28 lg:py-36 overflow-hidden">
       {/* Big marquee */}
       <div className="mb-20 border-y border-white/5 py-6">
         <Marquee
           text={marqueeText}
           speed="slow"
-          textClassName="font-black text-5xl md:text-7xl text-lime tracking-tight"
+          textClassName="font-black text-4xl sm:text-5xl md:text-7xl text-lime tracking-tight"
         />
       </div>
 
@@ -33,7 +33,7 @@ export default function Values() {
           <span className="text-lime text-xs font-bold tracking-widest uppercase">
             What Drives Us
           </span>
-          <h2 className="font-black text-5xl md:text-7xl text-white mt-2 leading-tight">
+          <h2 className="font-black text-4xl sm:text-5xl md:text-7xl text-white mt-2 leading-tight">
             OUR VALUES
           </h2>
         </motion.div>

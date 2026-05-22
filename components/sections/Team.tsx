@@ -9,7 +9,7 @@ export default function Team() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section ref={ref} className="bg-forest py-28 md:py-36">
+    <section ref={ref} className="bg-forest py-20 md:py-28 lg:py-36">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <motion.div
           className="mb-16"
@@ -20,12 +20,12 @@ export default function Team() {
           <span className="text-lime text-xs font-bold tracking-widest uppercase">
             The People Behind The Work
           </span>
-          <h2 className="font-black text-5xl md:text-7xl text-white mt-2 leading-tight">
+          <h2 className="font-black text-4xl sm:text-5xl md:text-7xl text-white mt-2 leading-tight">
             OUR TEAM
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {team.map((member, i) => (
             <motion.div
               key={member.id}
