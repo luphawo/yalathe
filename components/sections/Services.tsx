@@ -49,10 +49,10 @@ function DesktopServices() {
       style={{ height: "300vh" }}
     >
       {/* Sticky viewport-height panel */}
-      <div className="sticky top-0 h-screen flex">
+      <div className="sticky top-0 h-screen flex overflow-hidden">
 
-        {/* Left title panel */}
-        <div className="flex flex-col justify-center pl-10 pr-8 shrink-0 w-64 border-r border-white/5">
+        {/* Left title panel — z-10 + bg keeps it above the GPU-composited track */}
+        <div className="relative z-10 flex flex-col justify-center pl-10 pr-8 shrink-0 w-64 border-r border-white/5 bg-forest">
           <span className="text-offwhite/20 text-xs font-mono tracking-widest uppercase mb-4">
             What We Do
           </span>
@@ -70,7 +70,7 @@ function DesktopServices() {
           <div className="overflow-hidden w-full">
             <motion.div
               ref={trackRef}
-              className="flex gap-4 px-10 will-change-transform"
+              className="flex gap-4 px-10"
               style={{ x: translateX }}
             >
               {services.map((service) => (
