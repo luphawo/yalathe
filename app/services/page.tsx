@@ -1,5 +1,5 @@
 "use client";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, startTransition } from "react";
 import { motion, useInView, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { services } from "@/lib/data";
@@ -15,7 +15,7 @@ function ServiceAccordion({ service, index }: { service: (typeof services)[0]; i
   useEffect(() => {
     const hash = window.location.hash;
     if (hash === `#service-${service.number}`) {
-      setOpen(true);
+      startTransition(() => setOpen(true));
       ref.current?.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   }, [service.number]);

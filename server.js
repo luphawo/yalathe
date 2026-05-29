@@ -10,8 +10,9 @@ app.prepare().then(() => {
   createServer((req, res) => {
     const parsedUrl = parse(req.url, true);
     handle(req, res, parsedUrl);
-  }).listen(port, (err) => {
-    if (err) throw err;
-    console.log(`> Ready on port ${port}`);
-  });
+  })
+    .on("error", (err) => { throw err; })
+    .listen(port, () => {
+      console.log(`> Ready on port ${port}`);
+    });
 });
